@@ -172,7 +172,9 @@ function loadContactsFromServer() {
 //end load/save php -------------------------------------------------------
 
 
-
+function setStatus(status) {
+  document.getElementById("statusID").innerHTML = status;    
+}
 
 function previous() {
   if (currentContactIndex > 0) {
