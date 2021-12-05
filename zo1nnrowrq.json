@@ -1,0 +1,26 @@
+{
+    "firstName": "Clark",
+    "lastName": "Kent",
+    "preferredName": "Superman",
+    "email": "manofsteel@dailyplanet.com",
+    "phoneNumber": "800-iam-sups",
+    "class": "cpsc-24700-001",
+    "room": "AS-104-A",
+    "startTime": "3pm CT",
+    "seatNumber": "125",
+    "inPerson": [
+      "Wednesday",
+      "Friday"
+    ],
+    "virtual": [
+      "Monday"
+    ],
+    "city": "Smallville",
+    "state": "KS",
+    "zip": "67524",
+    "lat": "68.40",
+    "lng": "-98.40",
+    "favoriteHobby": "Reporting",
+    "favoriteColor": "Blue"
+  }
+  

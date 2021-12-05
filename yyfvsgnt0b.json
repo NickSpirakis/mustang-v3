@@ -1,0 +1,26 @@
+{
+    "firstName": "Ichigo",
+    "lastName": "Kurosaki",
+    "preferredName": "Ichigo",
+    "email": "zangetsu@zanpakuto.edu",
+    "phoneNumber": "111-111-1111",
+    "class": "cpsc-24700-001",
+    "room": "AS-104-A",
+    "startTime": "3pm CT",
+    "seatNumber": "676",
+    "inPerson": [
+      "Monday",
+      "Friday"
+    ],
+    "virtual": [
+      "Wednesday"
+    ],
+    "city": "Karakura Town",
+    "state": "IN",
+    "zip": "08514",
+    "lat": "40.18",
+    "lng": "-86.01",
+    "favoriteHobby": "Screaming ‘Bankai’",
+    "favoriteColor": "Orange"
+  }
+  

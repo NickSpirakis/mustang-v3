@@ -1,0 +1,26 @@
+{
+    "firstName": "Nicholas",
+    "lastName": "Spirakis",
+    "preferredName": "Nick",
+    "email": "nicholasespirakis@lewisu.edu",
+    "phoneNumber": "708-123-4567",
+    "class": "cpsc-24700-001",
+    "room": "AS-104-A",
+    "startTime": "3pm CT",
+    "seatNumber": "423",
+    "inPerson": [
+      "Monday",
+      "Wednesday"
+    ],
+    "virtual": [
+      "Friday"
+    ],
+    "city": "Orland Park",
+    "state": "IL",
+    "zip": "60467",
+    "lat": "41.59",
+    "lng": "-87.88",
+    "favoriteHobby": "Video Game Collecting",
+    "favoriteColor": "Blue"
+  }
+  
