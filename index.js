@@ -7,7 +7,6 @@ var btn2 = document.getElementById("btn2");
 var contContainer = document.getElementById("contact-info");
 
 
-
 //-------------------------------------------------------------------------
 var personButton = document.getElementById("personButton");
 
@@ -129,6 +128,48 @@ function viewCurrentContact() {
 
 
 }
+
+
+//load/save php -----------------------------------------------------------
+
+
+function saveContactsToServer() {
+  console.log("saveContactsToServer()");
+  xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          console.log('Response: ' + this.responseText);
+          setStatus(this.responseText)
+      }
+  };
+  xmlhttp.open("POST", "save-con.php", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("contacts=" + JSON.stringify(contactArray));   
+}
+
+function loadContactsFromServer() {
+  console.log("loadContactsFromServer()");
+
+  // Clear the current contacts.
+  contactArray.length = 0;
+
+  xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          contactArray = JSON.parse(this.responseText);
+          setStatus("Loaded contacts (" + contactArray.length + ")");
+
+          currentContactIndex = 0;
+          viewCurrentContact()
+      }
+  };
+
+  xmlhttp.open("GET", "load-con.php", true);
+  xmlhttp.send();   
+}
+
+
+//end load/save php -------------------------------------------------------
 
 
 
