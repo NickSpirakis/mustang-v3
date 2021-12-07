@@ -193,8 +193,7 @@ function loadContactsFromServer() {
 
 
 
-//-----ex code to loadContacts------------------------------------
-
+//-----ex code to loadContacts, to ensure my old way was not the issue-----------------------------
 
 function importContacts() {
   console.log("importContacts()");
